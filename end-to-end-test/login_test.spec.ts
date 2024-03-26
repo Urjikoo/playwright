@@ -7,10 +7,12 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/playwright testing/);
 });
 
+test('get started link', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
 
   // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
+  await page.getByRole('link', { name: 'Log in' }).click();
 
   // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'User Login' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'null' })).toBeVisible();
 });

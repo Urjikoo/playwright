@@ -9,6 +9,7 @@ const TestUser = ()=>{
     <head>
   <title>playwright test</title>
 </head>
+
     <h1 data-testid="cypress-h1">Testing log in page</h1>
     <div>
     <span>name</span>
